@@ -1,0 +1,39 @@
+Para atualizar informações de usuários
+Endpoint para atualizar informações
+---
+/update/{id}:
+  put:
+    
+parameters:
+    - in: path
+      name: id
+      description: User ID
+      required: true
+      schema:
+      type: integer
+    - in: formData
+      name: nome_tutor
+      required: true
+      type: string
+    - in: formData
+      name: contato
+      required: true
+      type: string
+    - in: formData
+      name: nome_animal
+      required: true
+      type: string
+    - in: formData
+      name: especie
+      required: true
+      type: string
+
+tags:
+  - API
+
+responses:
+  200:
+    description: Usuário atualizado com sucesso
+    schema:
+      $ref: '#/definitions/AnimaisAdd'
+

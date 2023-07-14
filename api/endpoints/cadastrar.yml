@@ -1,0 +1,44 @@
+Para inserir novos dados de usuários
+Endpoint ára criar informações de usuários
+---
+parameters:
+    - in: formData
+      name: nome_tutor
+      required: true
+      type: string
+    - in: formData
+      name: contato
+      required: true
+      type: string
+    - in: formData
+      name: nome_animal
+      required: true
+      type: string
+    - in: formData
+      name: especie
+      required: true
+      type: string
+
+tags:
+  - API
+
+responses:
+  201:
+    description: Usuário criado com sucesso
+    schema:
+      $ref: '#/definitions/AnimaisAdd'
+
+
+definitions:
+  AnimaisAdd:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        example: "Fulano"
+      phone:
+        type: "string"
+        example: "(xx) xxxx-xxxx"
+      turma:
+        type: "string"
+        example: "1b"

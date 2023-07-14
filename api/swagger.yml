@@ -1,0 +1,17 @@
+swagger: '2.0'
+
+host: 'localhost:5000'
+
+info:
+  description: |
+    Documento para apresentar funcionalidades do **MVP**. 
+
+    ### Introdução
+
+    MVP de cadastro de paciente
+
+    O repositório do projeto, pode ser encontrado em [/api-gamificacao](link do github).
+
+
+tags:
+  - name: API

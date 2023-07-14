@@ -1,0 +1,21 @@
+Deletar dados do usuário da API
+Endpoint para deletar informações de usuários
+---
+---
+tags:
+  - API
+
+parameters:
+      - in: path
+        name: "id"
+        required: true
+        description: "Animais ID"
+        schema:
+          type: integer
+
+responses:
+  200:
+    description: Usuário deletado com sucesso
+    schema:
+      $ref: '#/definitions/AnimaisAdd'
+
